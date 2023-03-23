@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_selected_day_rv"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_gravity="center">
+
+    <TextView
+            android:id="@+id/tvTitleTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:text="Title"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvDeadlineTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:text="Deadline (XX:XX)"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"/>
+
+        <ImageView
+            android:id="@+id/ivCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/checkbox_unchecked"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
